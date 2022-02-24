@@ -1,8 +1,14 @@
 name: Helloworld
-on: push
+on: [push]
 jobs:
   hello-world:
     runs-on: ubuntu-latest
     steps:
       - name: echo hello world
         run: echo "Hello World!"
+
+  Hi-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo Hi world
+        run: echo "Hi World!"
